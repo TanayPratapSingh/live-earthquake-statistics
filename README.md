@@ -58,7 +58,7 @@ Then open `http://localhost:8000`. ES modules do not load from `file://`. The ma
 node --test tests/*.test.mjs
 ```
 
-27 tests on node 22 or newer, nothing to install. They recover b = 1 and a known completeness magnitude from synthetic catalogs, check the Shi and Bolt formula, recover p = 1.1 and c = 0.05 from synthetic aftershock times, and cover the merge rules: revisions, deletions, events aging out, stale responses, preferred id changes and events that come back. The two calibration checks quoted above run on their own:
+29 tests on node 22 or newer, nothing to install; two of them cover the shared duration formatting. They recover b = 1 and a known completeness magnitude from synthetic catalogs, check the Shi and Bolt formula, recover p = 1.1 and c = 0.05 from synthetic aftershock times, and cover the merge rules: revisions, deletions, events aging out, stale responses, preferred id changes and events that come back. The two calibration checks quoted above run on their own:
 
 ```bash
 node tests/sim/quakes_b_coverage.mjs
