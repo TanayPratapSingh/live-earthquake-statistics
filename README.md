@@ -42,7 +42,7 @@ Polling for 45 minutes from 19:19 UTC recorded 9 new events and 7 revisions, wit
 
 ## A test that failed for the right reason
 
-The first b-value test failed: its synthetic catalog had a true b of 1, and the 95% bootstrap interval came out [1.015, 1.070]. A 95% interval should miss about one time in twenty. Across 300 synthetic catalogs it covered the true value 93.7% of the time, with a spread of 0.0183 against a mean Shi and Bolt uncertainty of 0.0176. The single catalog test now uses a different seed, and a separate test requires at least 16 of 20 catalogs to cover the true value. For the Omori exponent, the spread of the fitted p is 0.211 with 120 aftershocks and 0.065 with 1,000.
+The first b-value test failed: its synthetic catalog had a true b of 1, and the 95% bootstrap interval missed it. A 95% interval should miss about one time in twenty. Across 300 synthetic catalogs it covered the true value 93.7% of the time, with a spread of 0.0183 against a mean Shi and Bolt uncertainty of 0.0176. The single catalog test now uses a different seed, and a separate test requires at least 16 of 20 catalogs to cover the true value. For the Omori exponent, the spread of the fitted p is 0.211 with 120 aftershocks and 0.065 with 1,000.
 
 ## Run it
 
